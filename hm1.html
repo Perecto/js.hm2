@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Photo Gallery</title>
+  <link rel="stylesheet" href="stylesheet.css">
+ 
+</head>
+<body onload="initializeGallery()">
+  <div id="image">Hover over an image below to display here.</div>
+  <div class="preview-container">
+    <img src="img/image1.jpg" alt="messi" class="preview" onmouseover="upDate(this)" onmouseout="undo()">
+    <img src="img/image2.jpg" alt="cristiano" class="preview" onmouseover="upDate(this)" onmouseout="undo()">
+    <img src="img/image3.jpg" alt="neymar" class="preview" onmouseover="upDate(this)" onmouseout="undo()">
+    <img src="img/image4.jpg" alt="ronaldinho" class="preview" onmouseover="upDate(this)" onmouseout="undo()">
+    <img src="img/image5.jpg" alt="ronaldo" class="preview" onmouseover="upDate(this)" onmouseout="undo()">
+    <img src="img/image6.jpg" alt="zidane" class="preview" onmouseover="upDate(this)" onmouseout="undo()">
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

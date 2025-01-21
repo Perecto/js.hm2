@@ -1,0 +1,99 @@
+/* 
+  Professional and Beautiful Stylesheet for Interactive Photo Gallery
+  - Enhanced visual appeal with modern styling.
+  - Added responsiveness for various screen sizes.
+  - Optimized for accessibility and user experience.
+*/
+
+/* General body styling */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom right, #4e54c8, #8f94fb);
+  color: #fff;
+}
+
+/* Main display area styling */
+#image {
+  width: 500px;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #ffffff20;
+  border: 2px solid #fff;
+  border-radius: 12px;
+  font-size: 22px;
+  color: #ffdd57; /* Updated color for the alt text */
+  font-family: 'Courier New', Courier, monospace; /* Updated font for the alt text */
+  margin-bottom: 30px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  padding: 10px; /* Added padding to prevent text clipping */
+  overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+#image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Styling for preview images */
+.preview {
+  width: 120px;
+  height: 90px;
+  object-fit: cover; /* Ensure images fit within the box without distortion */
+  margin: 15px;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.preview:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Container for preview images */
+.preview-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  #image {
+    width: 90%;
+    height: 250px;
+    font-size: 18px;
+  }
+
+  .preview {
+    width: 90px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  #image {
+    font-size: 16px;
+  }
+
+  .preview {
+    width: 75px;
+    height: 55px;
+  }
+}
